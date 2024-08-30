@@ -1,0 +1,325 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: rgb(91, 40, 40);
+  background-color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.navbar {
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: right; /* Center align flex items horizontally */
+  align-items: center; /* Center align flex items vertically */
+  font-size: 16px;
+  padding: 10px;
+  margin: -60px 0px 0px 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent (.navbar) */
+  margin-right: 1.2em;
+}
+
+.navbar a:hover {
+  border-bottom: 3px solid rgb(223, 181, 186);
+}
+a:active {
+  color: green;
+}
+.background {
+  box-sizing: border-box; /* max-width: 100%; */
+  background-attachment: fixed;
+  height: 40em;
+  background-image: url("https://blog.persiaventura.de/hs-fs/hubfs/Imported_Blog_Media/Nasir_Al_Molk_Mosque_HDR_Shot.jpg?width=1386&name=Nasir_Al_Molk_Mosque_HDR_Shot.jpg");
+  background-size: cover; /* Scale the image to cover the entire container */
+  background-position: center;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  border-radius: 3px; /* Add rounded corners to the container */
+  display: block;
+  margin-top: -20px;
+  filter: brightness(90%) contrast(120%);
+}
+
+.background h2,
+.background h4 {
+  position: relative;
+  top: 50%; /* Align the top edge of the text at the vertical center */
+  left: 50%; /* Align the left edge of the text at the horizontal center */
+  transform: translate(-50%, -50%); /* Center the text precisely */
+  color: white; /* Text color */
+  height: 2px;
+  padding: 20px; /* Optional: Add padding for better readability */
+  margin: 40px;
+  text-shadow: -1px -1px 0 #d7b4b4, 1px -1px 0 #d7b4b4, -1px 1px 0 #d7b4b4,
+    1px 1px 0 #d7b4b4;
+}
+
+.map {
+  float: right;
+  margin: 70px 90px 40px 40px;
+  border: 3px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 600px;
+}
+.map:hover {
+  transform: scale(1.2); /* Scale up the image on hover */
+  transition: transform 0.9s ease;
+}
+
+#main-header1 {
+  display: grid;
+}
+.main-text1 {
+  box-sizing: content-box;
+  width: 600px;
+  height: 400px;
+  display: grid;
+  margin: 10px 0 70px 40px;
+  padding: 20px;
+  text-align: justify;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.main-header2 {
+  margin-top: 20px;
+}
+.main-text2 {
+  box-sizing: content-box;
+  width: 61em;
+  height: 100px;
+  display: grid;
+  padding: 20px;
+  margin: 0px 0px 20px 40px;
+  text-align: justify;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.online-map {
+  margin: 60px;
+  border-radius: 8px;
+}
+
+.gallery1 {
+  display: flex;
+  margin-top: 180px;
+  justify-content: space-around; /* Distribute items evenly along the main axis */
+  align-items: center;
+}
+
+#city-img:hover {
+  transform: scale(1.2);
+  transition: transform 0.9s ease;
+}
+
+#city-img img {
+  width: 450px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+#city-img img:hover {
+}
+
+#city-caption {
+  margin-top: 20px;
+}
+#city-caption h3 {
+  font-size: 23px;
+}
+#city-caption p {
+  font-size: 16px;
+}
+
+.footer-container {
+  display: grid;
+  padding: 50px;
+  margin-top: 150px;
+  min-height: 400px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px; /* Adjust the column gap as needed */
+  background-color: rgb(116, 49, 49);
+}
+
+.nav-list {
+  box-sizing: border-box;
+  padding-top: 10rem;
+  margin-top: 20px;
+  margin-left: 40px;
+  list-style: none;
+  padding: 10px;
+  list-style: none;
+}
+.nav-list a {
+  text-decoration: none;
+  color: white;
+}
+.nav-list a:hover {
+  border-bottom: 2px solid white;
+}
+
+#nav-title {
+  list-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#nav-title a:hover {
+  color: rgb(97, 97, 246);
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Style for individual social media icons */
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px; /* Adjust spacing between icons */
+}
+
+/* Style for social media icon images */
+.social-icons img {
+  width: 40px; /* Set the width of the icons */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Basic button styling */
+.styled-button {
+  background-color: transparent; /* Set background color */
+  color: #fff; /* Set text color */
+  border: rgb(239, 217, 217); /* Remove default button border */
+  padding: 10px 20px; /* Add padding inside the button */
+  border-radius: 5px; /* Add rounded corners */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  text-transform: uppercase; /* Convert text to uppercase */
+  transition: background-color 0.3s ease; /* Add transition effect */
+  margin-left: 1000px;
+}
+
+/* Hover effect */
+.styled-button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+p::first-letter {
+  font-size: 150%;
+}
+p {
+  text-indent: 20px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 967px) {
+  .navbar {
+    flex-direction: column; /* Vertical layout */
+    align-items: self-end;
+    justify-content: start;
+    font-size: 15px;
+  }
+}
+/* Media query for medium screens (tablets, smaller desktops) */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: self-end;
+    justify-content: start;
+    font-size: 15px;
+    margin-top: 0px;
+  }
+
+  .background {
+    height: 30em;
+  }
+
+  .main-text1,
+  .main-text2 {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 1.2rem;
+  }
+
+  .map {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .gallery1 {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  #city-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Media query for small screens (mobile devices) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .background {
+    height: 20em;
+  }
+
+  .main-text1,
+  .main-text2 {
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  .map {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .gallery1 {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  #city-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+  }
+
+  .styled-button {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
